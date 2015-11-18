@@ -1,29 +1,16 @@
-// var Profile = require("./profile.js");
-// var unsecurePassword = "password";
-// var username = process.argv.slice(2);
-// // var bcrypt = require('bcrypt');
-// // bcrypt.genSalt(10, function(err, salt) {
-// //     bcrypt.hash('unsecurePassword', salt, function(err, hash) {
-// //         // Store hash in your password DB.
-// //         console.log(hash.underline.red);
-// //     });
-// // });
-// console.dir(process);
-// profile.get(username);
-// var studentProfile = new Profile("michaelhall6");
+
 var router = require('./router.js');
 var http = require('http');
 
 http.createServer(function (request, response) {
-  response..writeHead(200, {'Content-Type': 'text/plain'});
   router.home(request, response);
   router.user(request, response);
-}).listen(process.env.PORT, '0.0.0.0');
+}).listen(process.env.PORT || 5000);
 
 
 
 
-
+console.log('Server running at Port: ' + (process.env.PORT !== undefined ? process.env.PORT : 5000));
 
 
 
