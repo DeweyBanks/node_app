@@ -7,6 +7,9 @@
     "bcrypt": "^0.8.5",
     "color": "^0.10.1"
   },
+   "engines": {
+    "node": "0.12.5"
+  },
   "devDependencies": {},
   "scripts": {
     "start" : "node app.js",
