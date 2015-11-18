@@ -11,15 +11,14 @@
 // console.dir(process);
 // profile.get(username);
 // var studentProfile = new Profile("michaelhall6");
-
-
 var router = require('./router.js');
-var https = require('https');
+var http = require('http');
 
-https.createServer(function (request, response) {
+http.createServer(function (request, response) {
+  response..writeHead(200, {'Content-Type': 'text/plain'});
   router.home(request, response);
   router.user(request, response);
-}).listen(process.env.PORT || 3000);
+}).listen(process.env.PORT, '0.0.0.0');
 
 
 
