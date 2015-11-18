@@ -1,0 +1,17 @@
+{
+  "name": "node_app",
+  "version": "1.0.0",
+  "description": "a test app",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "color": "^0.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start" : "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dewey Banks",
+  "license": "MIT"
+}
