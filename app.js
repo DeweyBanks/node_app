@@ -12,14 +12,14 @@
 // profile.get(username);
 // var studentProfile = new Profile("michaelhall6");
 var router = require('./router.js');
-var http = require('http');
+var https = require('https');
 
 http.createServer(function (request, response) {
   router.home(request, response);
   router.user(request, response);
-}).listen(3000, '127.0.0.1');
+}).listen(3000, 'https://treesearch.herokuapp.com/');
 
-console.log('Server running at http://127.0.0.1:3000/');
+console.log('Server running at https://treesearch.herokuapp.com//');
 
 
 
