@@ -16,7 +16,7 @@
 var router = require('./router.js');
 var https = require('https');
 
-http.createServer(function (request, response) {
+https.createServer(function (request, response) {
   router.home(request, response);
   router.user(request, response);
 }).listen(process.env.PORT || 3000);
